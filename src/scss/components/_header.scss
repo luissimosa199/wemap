@@ -1,0 +1,8 @@
+@use '../utils/colors' as *;
+
+.styledHeader{
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    background-color: $color-principal;
+}

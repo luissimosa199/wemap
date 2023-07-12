@@ -1,0 +1,27 @@
+@use "./colors" as *;
+@use "./fonts" as *;
+@use "./mixins" as *;
+
+/* Acá se aplican las reglas generales de éstilo, con selectores puros SOLO anidados dentro de uno de clase */
+
+.mainLayout {  
+  display: flex;
+  flex-direction: column;
+  font-family: $font-montserrat;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin: 0;
+    
+    color:$color-secondary;
+    margin: 1%;
+  }
+
+  p{
+    color: blue;
+    font-size: larger;
+    font-weight: 700;
+  }
+
+ 
+}
