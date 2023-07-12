@@ -4,24 +4,31 @@
 
 /* Acá se aplican las reglas generales de éstilo, con selectores puros SOLO anidados dentro de uno de clase */
 
-.mainLayout {  
+.mainLayout {
   display: flex;
   flex-direction: column;
   font-family: $font-montserrat;
   justify-content: center;
   align-items: center;
+  background-color: $color-bg;
+
   h2 {
     margin: 0;
-    
-    color:$color-secondary;
+    color: $color-secondary;
     margin: 1%;
   }
 
-  p{
-    color: blue;
+  p {
+    color: $color-text;
     font-size: larger;
     font-weight: 700;
   }
 
- 
+  div {
+    display: flex;
+    justify-content: center;
+    @include movile {
+      flex-direction: column;
+    }
+  }
 }
