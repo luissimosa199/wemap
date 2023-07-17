@@ -3,3 +3,13 @@
         @content
     }
 }
+
+
+$min: 6px;
+$short: 12px;
+$medium: 24px;
+$long: 48px;
+
+@mixin bottom($value){
+    margin-bottom: $value;
+}
