@@ -10,17 +10,17 @@
   font-family: $font-montserrat;
   justify-content: center;
   align-items: center;
-  background-color: $color-bg;
+  
 
   h2 {
     margin: 0;
-    color: $color-secondary;
+    
     margin: 1%;
     @include bottom($long)
   }
 
   p {
-    color: $color-text;
+    
     font-size: larger;
     font-weight: 700;
     
