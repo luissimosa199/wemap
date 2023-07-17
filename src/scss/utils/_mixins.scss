@@ -5,6 +5,12 @@
 }
 
 
+@mixin flex($value){
+    display:flex ;
+    flex-direction: $value;
+}
+
+
 $min: 6px;
 $short: 12px;
 $medium: 24px;

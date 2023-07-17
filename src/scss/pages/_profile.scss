@@ -1,0 +1,63 @@
+@use "../utils/colors" as *;
+@use "../utils/utils" as *;
+
+.styledProfile {
+  @include flex(column);
+  @include movile;
+}
+
+.avatar {
+  align-self: center;
+  width: 120px;
+  height: 120px;
+}
+
+.nameAndSince {
+  @include flex(column);
+  width: 100%;
+
+  h3 {
+    align-self: center;
+  }
+}
+
+.since {
+  width: 100%;
+  font-size: smaller;
+  justify-self: flex-end;
+  margin-left: 55%;
+  margin-top: 1%;
+}
+
+.blueBox {
+  @include flex(row);
+  justify-content: space-around;
+  align-items: center;
+  width: 344px;
+  height: 59px;
+  background-color: $color5;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 5px;
+  @include bottom($short);
+  h4 {
+    color: #ffffff;
+    font-weight: 600;
+    align-self: flex-start;
+  }
+
+  h5 {
+    color: #301b84;
+    align-self: flex-end;
+  }
+}
+
+
+.buttonProfile{
+  width: 134px;
+  height: 40px;
+  align-self: center;
+  color: #ffffff;
+  background-color: $color4;
+  border: transparent;
+  border-radius: 20px;
+}
