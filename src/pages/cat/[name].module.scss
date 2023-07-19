@@ -1,0 +1,68 @@
+@use "../../scss/utils/fonts" as *;
+
+.container {
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  li {
+    height: 80px;
+    width: 367px;
+    border-radius: 12px;
+    border: 1px solid #cac4d0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    background-color: rgba(202, 196, 208, 1);
+
+    .rating {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      background-color: rgba(242, 191, 128, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: $font-roboto;
+      margin-left: 16px;
+    }
+
+    .nombre {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 16px;
+      font-family: $font-roboto;
+      font-weight: 500;
+      grid-column: 2;
+    }
+
+    .direccion {
+      padding-bottom: 16px;
+      margin: 0;
+      font-size: 16px;
+      font-family: $font-roboto;
+      font-weight: 500;
+      grid-column: 2;
+    }
+
+    .imagen {
+      grid-column: 3;
+      grid-row: 1 / 3;
+      height: 80px;
+      width: 76px;
+      justify-self: end;
+      background-color: gray;
+    }
+  }
+}
